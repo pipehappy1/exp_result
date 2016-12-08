@@ -1,0 +1,6 @@
+data set:
+	MNIST,CIFAR10
+Network structure:
+	conv(20 feature map) + pooling + conv(50 feature map) + pooling + fullconn + softmax
+batch size:500
+learning rate:0.01(cifar),0.1(mnist)
