@@ -1,0 +1,8 @@
+Network structure:
+	Here we adopt two types of network: 
+	The shallow one has three convolutional layers with the number of output 32, 64, 128, respectively and two fully connected layers which both have an output neurons of 1024;
+	The deep one has nine convolutional layers divided into three stacks with each stack having the same number of output 32, 64, 128 and two fully connected layers.
+	All convolutional layers have the same kernel size of 3 and we use max pooling of size 2, stride 2, at the end of each convolution or stack layer.
+data set:
+	MNIST,CIFAR10,CIFAR100
+All learning rate is 0.0001
