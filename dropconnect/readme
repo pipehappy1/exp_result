@@ -1,0 +1,7 @@
+drop connect on shallow and deep net
+
+learn rate:
+mnist : 0.001
+cifar10 : 0.0001
+
+version of git commit : 413fec2
