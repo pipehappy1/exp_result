@@ -1,0 +1,3 @@
+distribution of convolutional parameters layer by layer
+dataset : mnist and cifar10
+network model : shallow and deep net
