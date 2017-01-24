@@ -8,6 +8,7 @@ import mlbase.scheduling as sc
 def test2():
     network = N.Network()
     network.modelPrefix = 'mnist_shallow'
+    network.learningRate = 0.001
 
     network.setInput(N.RawInput((1, 28,28)))
     network.append(N.Conv2d(feature_map_multiplier=32))

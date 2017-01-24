@@ -9,6 +9,9 @@ def test1():
     network = N.Network()
     network.modelPrefix = 'mnist_deep_cos'
     network.debug = True
+    network.learningRate = 0.001
+
+    
     network.setInput(N.RawInput((1, 28,28)))
     network.append(N.Conv2d(feature_map_multiplier=32))
     network.append(act.Cosine())
