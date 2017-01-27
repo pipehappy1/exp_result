@@ -4,9 +4,11 @@ from matplotlib import pyplot as plt
 def mnist_shallow():
     mnist_shallow = np.load('cifar10_shallow.npy')
     mnist_shallow_sin = np.load('cifar10_shallow_sin.npy')
+    mnist_shallow_cos = np.load('cifar10_shallow_cos.npy')
     
     plt.plot(range(100), mnist_shallow[:100],     linestyle='-.', label='ReLU')
     plt.plot(range(100), mnist_shallow_sin[:100], label='sin')
+    plt.plot(range(100), mnist_shallow_cos[:100], linestyle='--', label='cos')
     
     plt.legend(loc='best', frameon=False)
     
